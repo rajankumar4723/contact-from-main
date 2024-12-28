@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Contact Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <div id="snackbar">
+      <i class="fa-sharp fa-solid fa-badge-check"></i>
+      <p>Thanks for completing the form. We'll be in touch soon!</p></div>
+
+    <div class="form-container">
+
+      <h2 class="heading">Contact Us</h2>
+      <form id="contactForm">
+        <div class="first">
+          <div>
+            <label for="name">First Name *</label><br>
+            <input type="text" id="name" name="name" required>
+            <span class="error-message">This field is required</span>
+          </div>
+          <div>
+            <label for="last">Last Name *</label><br>
+            <input type="text" id="last" name="last" required>
+            <span class="error-message">This field is required</span>
+          </div>
+
+        </div>
+        <br>
+        <div class="email">
+          <label for="email">Email Address *</label><br>
+          <input type="email" id="email" name="email" required>
+          <span class="error-message">Please enter a valid email address</span>
+        </div>
+        <br>
+        <label>Query Type *</label>
+        <div class="query-type">
+          <label class="radio-container">
+            <input type="radio" name="query" value="general">
+            <span>General Enquiry</span>
+          </label>
+          <label class="radio-container">
+            <input type="radio" name="query" value="support">
+            <span>Support Request</span>
+          </label>
+        </div>
+        <div class="error-message" id="errorMessage">Please select a query type</div>
+        <br>
+        <div>
+          <label for="message">Message *</label><br>
+          <textarea id="message" name="message" required></textarea>
+          <span class="error-message">This field is required</span>
+        </div>
+        <br>
+        <div>
+          <label>
+            <input type="checkbox" name="consent" id="consent" required>
+            <span>I consent to being contacted by the team *</span>
+          </label>
+          <span class="error-message">You must consent to submit the form</span>
+        </div>
+        <br><br>
+        <button type="button" onclick="validateForm()">Submit</button>
+      </form>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/6aae9c80cc.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
