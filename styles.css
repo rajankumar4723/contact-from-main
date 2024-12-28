@@ -186,4 +186,15 @@ button:hover {
         padding: 6px 20px;
 
     }
+    #snackbar {
+        visibility: hidden;
+        min-width: 150px;
+        margin-left: -170px;
+        text-align: center;
+        border-radius: 2px;
+        padding: 10px;
+        left: 50%;
+        top: 0px;
+        font-size: 10px;
+      }
 }
